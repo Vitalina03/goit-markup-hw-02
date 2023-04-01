@@ -1,4 +1,6 @@
 :root {
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
   --iris: #4d5ae5;
   --ocean: #404bbf;
   --navy-blue: #2e2f42;
@@ -11,11 +13,24 @@
   --grey: #2e2f42;
   --white: #ffffff;
   --dairy: #fcfcfc;
+  --background-main: #ffffff;
+  --background-secondary: #f4f4fd;
+  --backgraund-section: #e5e5e5;
 }
 
 .body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primary-font);
+  background-color: var(--background-main);
   color: var(--slate);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
 }
 
 /* main */
@@ -23,6 +38,7 @@
 }
 /* hero */
 .section-hero {
+  background-color: var(--navy-blue);
 }
 .hero-title {
   font-weight: 700;
@@ -31,12 +47,11 @@
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white);
-  background: var(--navy-blue);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background: var(--ocean);
+  background-color: var(--ocean);
 }
 .hero-btn {
   font-family: inherit;
@@ -54,6 +69,7 @@
 .header-nav {
 }
 .header-logo {
+  font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -62,6 +78,7 @@
   color: var(--iris);
 }
 .logo-dark {
+  font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -105,6 +122,10 @@
 .address-link:focus {
   color: var(--ocean);
 }
+.address-namber:hover,
+.address-namber:focus {
+  color: var(--ocean);
+}
 
 /* section */
 .section-company {
@@ -124,6 +145,10 @@
 }
 
 .company-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
 }
 .section-work {
 }
@@ -132,8 +157,10 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
+  text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  color: var(--navy-blue);
 }
 .work {
 }
@@ -142,17 +169,27 @@
 .work-img {
 }
 .section-team {
+  background-color: var(--background-secondary);
 }
 .team {
 }
 .work-team {
+  background-color: var(--background-main);
 }
 .team-underitle {
+  color: var(--slate);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .team-img {
 }
 .team-text {
+  color: var(--slate);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 /* portfolio */
 .section-portfolio {
@@ -165,7 +202,7 @@
   color: var(--white);
 }
 .portfolio-btn {
-  font-family: inherit;
+  font-family: var(--primary-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -184,16 +221,31 @@
 .portfolio-img {
 }
 .portfolio-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
 }
 .portfolio-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
 }
 .portfolio-text-hov {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--cloud);
 }
 /* footer */
 .footer {
+  background-color: var(--navy-blue);
 }
+
 .footer-logo {
-  font-family: "Raleway";
+  font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -202,7 +254,7 @@
   color: var(--iris);
 }
 .logo-light {
-  font-family: "Raleway";
+  font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
   line-height: 1.7;
