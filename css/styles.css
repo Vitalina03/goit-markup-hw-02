@@ -18,7 +18,7 @@
   --backgraund-section: #e5e5e5;
 }
 
-.body {
+body {
   font-family: "Roboto", sans-serif;
   background-color: var(--background-main);
   color: #434455;
